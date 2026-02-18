@@ -6,10 +6,10 @@ CSV=0
 COUNT=0
 
 print_help() {
-    echo "ig-diff.sh - Instagram follow diff tool"
+    echo "ig-checker.sh - Instagram follow diff tool"
     echo
     echo "Usage:"
-    echo "  ig-diff.sh [options]"
+    echo "  ig-checker.sh [options]"
     echo
     echo "Options:"
     echo "  --reverse        Show who follows you but you don't follow"

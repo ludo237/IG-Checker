@@ -26,6 +26,9 @@ Arch:
 Alpine:
     apk add jq
 
+macOS:
+    brew install jq
+
 ---
 
 ## How to Obtain Your Instagram Data
@@ -58,11 +61,11 @@ Or pass a custom directory using --dir.
 
 Make the script executable:
 
-    chmod +x ig-cheker.sh
+    chmod +x ig-checker.sh
 
 Optionally move it to your PATH:
 
-    sudo mv ig-cheker.sh /usr/local/bin/ig-cheker
+    sudo mv ig-checker.sh /usr/local/bin/ig-checker
 
 ---
 
@@ -70,27 +73,31 @@ Optionally move it to your PATH:
 
 Default (who you follow that doesn't follow you back):
 
-    ./ig-cheker.sh
+    ./ig-checker.sh
 
 Reverse:
 
-    ./ig-cheker.sh --reverse
+    ./ig-checker.sh --reverse
 
 Both directions:
 
-    ./ig-cheker.sh --both
+    ./ig-checker.sh --both
 
 Show counts:
 
-    ./ig-cheker.sh --both --count
+    ./ig-checker.sh --both --count
 
 Export to CSV:
 
-    ./ig-cheker.sh --csv
+    ./ig-checker.sh --csv
 
 Custom directory:
 
-    ./ig-cheker.sh --dir ~/Downloads/instagram-export
+    ./ig-checker.sh --dir ~/Downloads/instagram-export
+
+Show help:
+
+    ./ig-checker.sh --help
 
 ---
 
