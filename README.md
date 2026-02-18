@@ -1,9 +1,8 @@
-# IG Follow Diff (POSIX Version)
+# IG Follow Checker (POSIX Version)
 
 A lightweight POSIX-compliant shell tool to compare your Instagram followers and following lists locally.
 
-No API. No scraping. No authentication.  
-Pure JSON processing.
+No API. No scraping. No authentication. Pure JSON processing.
 
 ---
 
@@ -59,11 +58,11 @@ Or pass a custom directory using --dir.
 
 Make the script executable:
 
-    chmod +x ig-diff.sh
+    chmod +x ig-cheker.sh
 
 Optionally move it to your PATH:
 
-    sudo mv ig-diff.sh /usr/local/bin/ig-diff
+    sudo mv ig-cheker.sh /usr/local/bin/ig-cheker
 
 ---
 
@@ -71,27 +70,27 @@ Optionally move it to your PATH:
 
 Default (who you follow that doesn't follow you back):
 
-    ./ig-diff.sh
+    ./ig-cheker.sh
 
 Reverse:
 
-    ./ig-diff.sh --reverse
+    ./ig-cheker.sh --reverse
 
 Both directions:
 
-    ./ig-diff.sh --both
+    ./ig-cheker.sh --both
 
 Show counts:
 
-    ./ig-diff.sh --both --count
+    ./ig-cheker.sh --both --count
 
 Export to CSV:
 
-    ./ig-diff.sh --csv
+    ./ig-cheker.sh --csv
 
 Custom directory:
 
-    ./ig-diff.sh --dir ~/Downloads/instagram-export
+    ./ig-cheker.sh --dir ~/Downloads/instagram-export
 
 ---
 
@@ -119,5 +118,5 @@ This tool avoids all that by using your official data export.
 
 ## License
 
-Personal use. No affiliation with Instagram.
-
+This project is for personal use. No affiliation with Instagram.
+It's licensed under MIT just in case.
